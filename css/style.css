@@ -150,7 +150,7 @@
             top: 0;
             right: -20rem;
             transition: all 1s;
-            z-index: 150;
+            z-index: 10;
         }
         
         .show-menu .sidebar {
