@@ -375,7 +375,10 @@
         } 
         @media (min-width: 800px){
             .card-info, .card-info button, .card-info h2{
-             font-size: 20px;
+             font-size: 15px;
+             position: relative;
+             padding: 10px;
+             
              }
         } 
 
@@ -400,6 +403,8 @@
             font-weight: 500;
             color: #eee;
             text-align: center;
+            width: 80%;
+
         }
 
         .card-info h3{
@@ -411,13 +416,14 @@
             padding: 4px;
             text-align: center;
             align-items: center;
+            width: 90%;
         }
 
         .card-info p{
             font-family: var(--font-secundary);
             color: #eee;
             font-weight: 400;
-            width: 90%;
+            width: 80%;
             padding: 1rem;
         }
 
@@ -433,6 +439,7 @@
             border: none;
             border-radius: 5rem;
             cursor: pointer;
+            width: 90%;
         }
 
         .card:hover .card-info{
