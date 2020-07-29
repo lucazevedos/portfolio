@@ -388,7 +388,7 @@
         }
         @media (min-width: 300px){
             .card-info, .card-info button, .card-info h2{
-             font-size: 12px;
+             font-size: 13px;
              width: 100%;
              
              }
@@ -396,8 +396,6 @@
         @media (min-width: 800px){
             .card-info, .card-info button, .card-info h2{
              font-size: 15px;
-             position: relative;
-             padding: 10px;
              
              }
         } 
@@ -407,6 +405,8 @@
         }
 
         .card-info{
+            display: flex;
+            flex-wrap: wrap;
             opacity: 0;
             visibility: hidden;
             position: absolute;
@@ -415,6 +415,7 @@
             justify-content: center;
             text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .4);
             transition: all 1s;
+            margin-bottom: 2rem;
         }
 
         .card-info h2{
@@ -423,7 +424,7 @@
             font-weight: 500;
             color: #eee;
             text-align: center;
-            width: 80%;
+            width: 88%;
 
         }
 
