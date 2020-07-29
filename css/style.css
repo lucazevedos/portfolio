@@ -166,7 +166,6 @@
         }
         
         .banner a:hover {
-            color: #000;
             font-weight: bolder;
             box-shadow: 0 0 10px #8E2DE2,0 0 10px#8E2DE2, 0 0 10px #8E2DE2 ;
         }
@@ -202,11 +201,12 @@
             font-family: var(--font-action);
             font-size: 2rem;
             color: #555;
-            transition: color 1s;
+            transition: color .5s;
         }
         
         .menu-link:hover {
             color: #4A00E0;
+            
         }
         
         .social-media {
@@ -219,7 +219,7 @@
         }
         
         .social-media i {
-            background-color: #4A00E0;
+            background-color: #3b3b3b;
             color: #c0c0c0;
             height: 2.5rem;
             width: 2.5rem;
@@ -233,6 +233,9 @@
         
         .social-media i:hover {
             background-color: #000000;
+            box-shadow: 0 0 10px #3b3b3b;
+            animation: zoom 2s;
+            box-shadow: 0 0 10px #8E2DE2,0 0 10px#8E2DE2, 0 0 10px #8E2DE2 ;
         }
 
         .conhecimentos{
