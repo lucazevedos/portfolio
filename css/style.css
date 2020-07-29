@@ -13,9 +13,11 @@
             --font-action: "Mulish", serif;
         }
 
-        html{
+        html,
+        body{
             scroll-behavior: smooth;
             width: 100%;
+            overflow-x: hidden;
         }
 
         
@@ -24,7 +26,7 @@
             height: 2rem;
             position: fixed;
             z-index: 100;
-            right: 4rem;
+            right: 2rem;
             top: 2rem;
             display: flex;
             flex-direction: column;
@@ -55,7 +57,7 @@
         }
         
         .show-menu .menulateral {
-            right: 16rem;
+            right: 1rem;
         }
         
         .line {
@@ -236,7 +238,7 @@
         .conhecimentos{
             display: grid;
             grid-template-columns: repeat(16,1fr);
-            grid-template-rows: repeat(6, 6rem);
+            grid-template-rows: repeat(8, 6rem);
             row-gap: .5rem;
             
         }
@@ -265,6 +267,16 @@
             grid-column: 11 / 14;
             grid-row: 5 / -1;
         }
+        .conhecimento:nth-child(7){
+            grid-column: 3 / 6;
+            grid-row: 8 / -3;
+        }
+
+        .conhecimento:nth-child(8){
+            grid-column: 12 / 15;
+            grid-row: 8 / -3;
+        }
+
 
         .sessao-conhecimentos{
             background-color: #e8e8e8;
@@ -302,7 +314,7 @@
             color: #3c6cc0;
         }
         #design{
-            color:#008000;
+            color:#ff0000;
         }
         #js{
             color: #f0d91d;
@@ -313,6 +325,12 @@
         }
         #github{
             color: #313030;
+        }
+        #bancodedados{
+            color: #aeaeae;
+        }
+        #cplus{
+            color: #1d04a8;
         }
 
         .conhecimento-header h3{
@@ -341,11 +359,13 @@
 
         .projetos{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             margin-bottom: 2rem;
         }
 
         .card{
+            margin: 5px;
             width: 18rem;
             height: 23rem;
             position: relative;
@@ -440,6 +460,10 @@
             border-radius: 5rem;
             cursor: pointer;
             width: 90%;
+        }
+        .card-info button a{
+            color: #fff;
+            padding: 1rem 3rem;
         }
 
         .card:hover .card-info{
